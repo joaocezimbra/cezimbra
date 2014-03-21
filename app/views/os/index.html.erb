@@ -1,0 +1,97 @@
+<h1>Listando Ordens de Serviço</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Cliente</th>
+      <th>Status</th>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @os.each do |o| %>
+	 <% if o.status != "Finalizada" %>
+	 <% if o.status != "Encerrada" %>
+      <tr>
+        <td><%= link_to o.numero, o %></td>
+        <td><%= link_to o.cliente, o %></td>
+        <td><%= o.status %></td>
+        <td><%= o.obs %></td>
+        <td><%= link_to 'Editar ', edit_o_path(o) %></td>
+        <td><%= link_to 'Excluir', o, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+	 <% end %>  
+	 <% end %>  
+    <% end %>
+  </tbody>
+</table>
+
+</br>
+</br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Cliente</th>
+      <th>Status</th>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @os.each do |o| %>
+	 <% if o.status == "Finalizada" %>
+      <tr>
+        <td><%= link_to o.numero, o %></td>
+        <td><%= link_to o.cliente, o %></td>
+        <td><%= o.status %></td>
+        <td><%= o.obs %></td>
+        <td><%= link_to 'Editar ', edit_o_path(o) %></td>
+        <td><%= link_to 'Excluir', o, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+	 <% end %>  
+    <% end %>
+  </tbody>
+</table>
+
+</br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nº</th>
+      <th>Cliente</th>
+      <th>Status</th>
+      <th>Obs</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @os.each do |o| %>
+	 <% if o.status == "Encerrada" %>
+      <tr>
+        <td><%= link_to o.numero, o %></td>
+        <td><%= link_to o.cliente, o %></td>
+        <td><%= o.status %></td>
+        <td><%= o.obs %></td>
+        <td><%= link_to 'Editar ', edit_o_path(o) %></td>
+        <td><%= link_to 'Excluir', o, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+	 <% end %>  
+    <% end %>
+  </tbody>
+</table>
+
+  
+</br>
+
+<%= link_to 'Nova OS', new_o_path %>

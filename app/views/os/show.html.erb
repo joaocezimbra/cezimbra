@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>OS <%= @o.numero %></strong>
+  <br> <%= @o.cliente %> </br>
+</p>
+
+<p>
+  <strong>Itens</strong>
+  <br> <%= @o.itens %> </br>
+</p>
+
+<p>
+  <strong>Status</strong>
+  <br> <%= @o.status %> </br>
+</p>
+
+<p>
+  <strong>Obs</strong>
+  <%= @o.obs %>
+</p>
+<br/>
+
+<%= link_to 'Editar', edit_o_path(@o) %> |
+<%= link_to 'Voltar', os_path %>
