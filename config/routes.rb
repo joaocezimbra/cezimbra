@@ -1,4 +1,5 @@
 Gos::Application.routes.draw do
+  
   resources :os
   
   root to: "os#index"

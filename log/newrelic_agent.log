@@ -71,3 +71,217 @@
 [03/21/14 11:57:36 -0300 Joao-UNO (212)] INFO : Finished instrumentation
 [03/21/14 11:57:36 -0300 Joao-UNO (212)] WARN : Failed to determine processor count, assuming 1
 [03/21/14 11:57:42 -0300 Joao-UNO (212)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Enabling the Request Sampler.
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Environment: development
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Dispatcher: webrick
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Application: My Application
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] WARN : Agent configured not to send data in this environment.
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Installing Net instrumentation
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Installing deferred Rack instrumentation
+[03/21/14 14:08:35 -0300 Joao-UNO (6916)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 14:08:36 -0300 Joao-UNO (6916)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 14:08:36 -0300 Joao-UNO (6916)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 14:08:36 -0300 Joao-UNO (6916)] INFO : Finished instrumentation
+[03/21/14 14:08:36 -0300 Joao-UNO (6916)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 14:08:42 -0300 Joao-UNO (6916)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Enabling the Request Sampler.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Environment: development
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : No known dispatcher detected.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Application: My Application
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:18:34 -0300 Joao-UNO (6860)] INFO : Installing Net instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] INFO : Finished instrumentation
+[03/21/14 18:18:35 -0300 Joao-UNO (6860)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Enabling the Request Sampler.
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Environment: development
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Dispatcher: webrick
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Application: My Application
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Installing Net instrumentation
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:20:52 -0300 Joao-UNO (1960)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:20:53 -0300 Joao-UNO (1960)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:20:53 -0300 Joao-UNO (1960)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:20:53 -0300 Joao-UNO (1960)] INFO : Finished instrumentation
+[03/21/14 18:20:53 -0300 Joao-UNO (1960)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:20:58 -0300 Joao-UNO (1960)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Enabling the Request Sampler.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Environment: development
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : No known dispatcher detected.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Application: My Application
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Installing Net instrumentation
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:26:54 -0300 Joao-UNO (5236)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:26:55 -0300 Joao-UNO (5236)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:26:55 -0300 Joao-UNO (5236)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:26:55 -0300 Joao-UNO (5236)] INFO : Finished instrumentation
+[03/21/14 18:26:55 -0300 Joao-UNO (5236)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Enabling the Request Sampler.
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Environment: development
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Dispatcher: webrick
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] INFO : Application: My Application
+[03/21/14 18:27:35 -0300 Joao-UNO (1348)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing Net instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] INFO : Finished instrumentation
+[03/21/14 18:27:36 -0300 Joao-UNO (1348)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:27:42 -0300 Joao-UNO (1348)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 18:30:50 -0300 Joao-UNO (3760)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:30:50 -0300 Joao-UNO (3760)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:30:50 -0300 Joao-UNO (3760)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Enabling the Request Sampler.
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Environment: development
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Dispatcher: webrick
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Application: My Application
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing Net instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] INFO : Finished instrumentation
+[03/21/14 18:30:51 -0300 Joao-UNO (3760)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:30:57 -0300 Joao-UNO (3760)] INFO : Doing deferred dependency-detection before Rack startup
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Starting the New Relic agent in "development" environment.
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Reading configuration from config/newrelic.yml
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : New Relic Agent Developer Mode enabled.
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Enabling the Request Sampler.
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Environment: development
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Dispatcher: webrick
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Application: My Application
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] WARN : Agent configured not to send data in this environment.
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Installing ActiveRecord 4 instrumentation
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Installing Net instrumentation
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Installing deferred Rack instrumentation
+[03/21/14 18:32:09 -0300 Joao-UNO (3616)] INFO : Installing Rails 4 Controller instrumentation
+[03/21/14 18:32:10 -0300 Joao-UNO (3616)] INFO : Installing Rails 4 view instrumentation
+[03/21/14 18:32:10 -0300 Joao-UNO (3616)] INFO : Installing Rails4 Error instrumentation
+[03/21/14 18:32:10 -0300 Joao-UNO (3616)] INFO : Finished instrumentation
+[03/21/14 18:32:10 -0300 Joao-UNO (3616)] WARN : Failed to determine processor count, assuming 1
+[03/21/14 18:32:16 -0300 Joao-UNO (3616)] INFO : Doing deferred dependency-detection before Rack startup
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Starting the New Relic agent in "development" environment.
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Reading configuration from config/newrelic.yml
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : New Relic Agent Developer Mode enabled.
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Enabling the Request Sampler.
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Environment: development
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Dispatcher: webrick
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Application: My Application
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] WARN : Agent configured not to send data in this environment.
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Installing ActiveRecord 4 instrumentation
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Installing Net instrumentation
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Installing deferred Rack instrumentation
+[03/24/14 10:24:07 -0300 Joao-UNO (1652)] INFO : Installing Rails 4 Controller instrumentation
+[03/24/14 10:24:08 -0300 Joao-UNO (1652)] INFO : Installing Rails 4 view instrumentation
+[03/24/14 10:24:08 -0300 Joao-UNO (1652)] INFO : Installing Rails4 Error instrumentation
+[03/24/14 10:24:08 -0300 Joao-UNO (1652)] INFO : Finished instrumentation
+[03/24/14 10:24:08 -0300 Joao-UNO (1652)] WARN : Failed to determine processor count, assuming 1
+[03/24/14 10:24:14 -0300 Joao-UNO (1652)] INFO : Doing deferred dependency-detection before Rack startup
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Starting the New Relic agent in "development" environment.
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Reading configuration from config/newrelic.yml
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : New Relic Agent Developer Mode enabled.
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Enabling the Request Sampler.
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Environment: development
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Dispatcher: webrick
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Application: My Application
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] WARN : Agent configured not to send data in this environment.
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Installing ActiveRecord 4 instrumentation
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Installing Net instrumentation
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Installing deferred Rack instrumentation
+[03/24/14 10:28:04 -0300 Joao-UNO (3648)] INFO : Installing Rails 4 Controller instrumentation
+[03/24/14 10:28:05 -0300 Joao-UNO (3648)] INFO : Installing Rails 4 view instrumentation
+[03/24/14 10:28:05 -0300 Joao-UNO (3648)] INFO : Installing Rails4 Error instrumentation
+[03/24/14 10:28:05 -0300 Joao-UNO (3648)] INFO : Finished instrumentation
+[03/24/14 10:28:05 -0300 Joao-UNO (3648)] WARN : Failed to determine processor count, assuming 1
+[03/24/14 10:28:10 -0300 Joao-UNO (3648)] INFO : Doing deferred dependency-detection before Rack startup
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Starting the New Relic agent in "development" environment.
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Reading configuration from config/newrelic.yml
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : New Relic Agent Developer Mode enabled.
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Enabling the Request Sampler.
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Environment: development
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Dispatcher: webrick
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Application: My Application
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] WARN : Agent configured not to send data in this environment.
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Installing ActiveRecord 4 instrumentation
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Installing Net instrumentation
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Installing deferred Rack instrumentation
+[03/24/14 10:58:37 -0300 Joao-UNO (2924)] INFO : Installing Rails 4 Controller instrumentation
+[03/24/14 10:58:38 -0300 Joao-UNO (2924)] INFO : Installing Rails 4 view instrumentation
+[03/24/14 10:58:38 -0300 Joao-UNO (2924)] INFO : Installing Rails4 Error instrumentation
+[03/24/14 10:58:38 -0300 Joao-UNO (2924)] INFO : Finished instrumentation
+[03/24/14 10:58:38 -0300 Joao-UNO (2924)] WARN : Failed to determine processor count, assuming 1
+[03/24/14 10:58:43 -0300 Joao-UNO (2924)] INFO : Doing deferred dependency-detection before Rack startup
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Starting the New Relic agent in "development" environment.
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Reading configuration from config/newrelic.yml
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : New Relic Agent Developer Mode enabled.
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Enabling the Request Sampler.
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Environment: development
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Dispatcher: webrick
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] INFO : Application: My Application
+[03/24/14 14:48:12 -0300 Joao-UNO (2872)] WARN : Agent configured not to send data in this environment.
+[03/24/14 14:48:13 -0300 Joao-UNO (2872)] INFO : Installing ActiveRecord 4 instrumentation
+[03/24/14 14:48:13 -0300 Joao-UNO (2872)] INFO : Installing Net instrumentation
+[03/24/14 14:48:13 -0300 Joao-UNO (2872)] INFO : Installing deferred Rack instrumentation
+[03/24/14 14:48:13 -0300 Joao-UNO (2872)] INFO : Installing Rails 4 Controller instrumentation
+[03/24/14 14:48:14 -0300 Joao-UNO (2872)] INFO : Installing Rails 4 view instrumentation
+[03/24/14 14:48:14 -0300 Joao-UNO (2872)] INFO : Installing Rails4 Error instrumentation
+[03/24/14 14:48:14 -0300 Joao-UNO (2872)] INFO : Finished instrumentation
+[03/24/14 14:48:14 -0300 Joao-UNO (2872)] WARN : Failed to determine processor count, assuming 1
+[03/24/14 14:48:20 -0300 Joao-UNO (2872)] INFO : Doing deferred dependency-detection before Rack startup
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Starting the New Relic agent in "development" environment.
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Reading configuration from config/newrelic.yml
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : New Relic Agent Developer Mode enabled.
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Enabling the Request Sampler.
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Environment: development
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Dispatcher: webrick
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] INFO : Application: My Application
+[03/24/14 16:36:29 -0300 Joao-UNO (3708)] WARN : Agent configured not to send data in this environment.
+[03/24/14 16:36:30 -0300 Joao-UNO (3708)] INFO : Installing ActiveRecord 4 instrumentation
+[03/24/14 16:36:30 -0300 Joao-UNO (3708)] INFO : Installing Net instrumentation
+[03/24/14 16:36:30 -0300 Joao-UNO (3708)] INFO : Installing deferred Rack instrumentation
+[03/24/14 16:36:30 -0300 Joao-UNO (3708)] INFO : Installing Rails 4 Controller instrumentation
+[03/24/14 16:36:31 -0300 Joao-UNO (3708)] INFO : Installing Rails 4 view instrumentation
+[03/24/14 16:36:31 -0300 Joao-UNO (3708)] INFO : Installing Rails4 Error instrumentation
+[03/24/14 16:36:31 -0300 Joao-UNO (3708)] INFO : Finished instrumentation
+[03/24/14 16:36:31 -0300 Joao-UNO (3708)] WARN : Failed to determine processor count, assuming 1
+[03/24/14 16:36:36 -0300 Joao-UNO (3708)] INFO : Doing deferred dependency-detection before Rack startup

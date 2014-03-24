@@ -3884,3 +3884,840 @@ Processing by OsController#index as HTML
   [1m[36mO Load (7.0ms)[0m  [1mSELECT "os".* FROM "os"[0m
   Rendered os/index.html.erb within layouts/application (32.0ms)
 Completed 200 OK in 70ms (Views: 62.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-21 14:57:27 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 323ms (Views: 275.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 14:57:28 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 14:57:28 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 14:57:28 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 14:57:28 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 14:57:28 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 14:57:29 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 14:57:29 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 14:57:29 -0300
+
+
+Started GET "/os/14" for 127.0.0.1 at 2014-03-21 15:15:29 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered os/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/os/14/edit" for 127.0.0.1 at 2014-03-21 15:15:31 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "14"]]
+Filter chain halted as #<Proc:0x409a370@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/os/14/edit" for 127.0.0.1 at 2014-03-21 15:15:36 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered os/_form.html.erb (184.0ms)
+  Rendered os/edit.html.erb within layouts/application (218.0ms)
+Completed 200 OK in 253ms (Views: 250.0ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/os/14" for 127.0.0.1 at 2014-03-21 15:17:07 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkRk6OdourbjSJ2V1oE4gUzauYMMu1HmgoPiZB+wh04=", "o"=>{"numero"=>"1055/1059", "cliente"=>"Guardiom Segurança", "itens"=>"DVRs e câmera GeoVision", "status"=>"Em conserto", "obs"=>"Só falta 1 DVR que está com GeoVision (desde 07/03/14)"}, "commit"=>"Update O", "id"=>"14"}
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "14"]]
+Filter chain halted as #<Proc:0x409a370@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 6ms (ActiveRecord: 1.0ms)
+
+
+Started PATCH "/os/14" for 127.0.0.1 at 2014-03-21 15:17:07 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkRk6OdourbjSJ2V1oE4gUzauYMMu1HmgoPiZB+wh04=", "o"=>{"numero"=>"1055/1059", "cliente"=>"Guardiom Segurança", "itens"=>"DVRs e câmera GeoVision", "status"=>"Em conserto", "obs"=>"Só falta 1 DVR que está com GeoVision (desde 07/03/14)"}, "commit"=>"Update O", "id"=>"14"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (75.0ms)[0m  [1mUPDATE "os" SET "obs" = ?, "updated_at" = ? WHERE "os"."id" = 14[0m  [["obs", "Só falta 1 DVR que está com GeoVision (desde 07/03/14)"], ["updated_at", Fri, 21 Mar 2014 18:17:07 UTC +00:00]]
+  [1m[35m (85.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/os/14
+Completed 302 Found in 186ms (ActiveRecord: 161.0ms)
+
+
+Started GET "/os/14" for 127.0.0.1 at 2014-03-21 15:17:07 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered os/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 15:17:07 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 15:17:07 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 15:17:08 -0300
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-21 15:19:51 -0300
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/os/30" for 127.0.0.1 at 2014-03-21 16:45:53 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  Rendered os/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/os/30/edit" for 127.0.0.1 at 2014-03-21 17:13:42 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[35mO Load (0.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "30"]]
+  Rendered os/_form.html.erb (3.0ms)
+  Rendered os/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/os/30" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkRk6OdourbjSJ2V1oE4gUzauYMMu1HmgoPiZB+wh04=", "o"=>{"numero"=>"1075", "cliente"=>"Marcon", "itens"=>"1 câmera GV-CB120", "status"=>"Em conserto", "obs"=>"Liga mas não conecta na rede. A ser enviada para a GV (desde 21/03/2014). Aberta em 17/03/2014"}, "commit"=>"Update O", "id"=>"30"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mUPDATE "os" SET "obs" = ?, "updated_at" = ? WHERE "os"."id" = 30[0m  [["obs", "Liga mas não conecta na rede. A ser enviada para a GV (desde 21/03/2014). Aberta em 17/03/2014"], ["updated_at", Fri, 21 Mar 2014 20:14:16 UTC +00:00]]
+  [1m[35m (72.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/os/30
+Completed 302 Found in 82ms (ActiveRecord: 76.0ms)
+
+
+Started GET "/os/30" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  Rendered os/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 17:14:16 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 17:14:17 -0300
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-21 17:14:18 -0300
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 10.1.1.134 at 2014-03-21 17:52:39 -0300
+Processing by OsController#index as HTML
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os"[0m
+  Rendered os/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.1.1.134 at 2014-03-21 17:52:40 -0300
+
+
+Started GET "/assets/os.css?body=1" for 10.1.1.134 at 2014-03-21 17:52:40 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 10.1.1.134 at 2014-03-21 17:52:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 10.1.1.134 at 2014-03-21 17:52:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.1.1.134 at 2014-03-21 17:52:42 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.1.1.134 at 2014-03-21 17:52:42 -0300
+
+
+Started GET "/assets/os.js?body=1" for 10.1.1.134 at 2014-03-21 17:52:42 -0300
+
+
+Started GET "/assets/application.js?body=1" for 10.1.1.134 at 2014-03-21 17:52:42 -0300
+
+
+Started GET "/os/30/edit" for 127.0.0.1 at 2014-03-21 18:15:02 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[35mO Load (0.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "30"]]
+  Rendered os/_form.html.erb (3.0ms)
+  Rendered os/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/os/30" for 127.0.0.1 at 2014-03-21 18:15:29 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkRk6OdourbjSJ2V1oE4gUzauYMMu1HmgoPiZB+wh04=", "o"=>{"numero"=>"1075", "cliente"=>"Marcon", "itens"=>"1 câmera GV-CB120", "status"=>"Em conserto", "obs"=>"Embaçada. Aguarda resposta do Thomas (desde 21/03/2014). Aberta em 17/03/2014"}, "commit"=>"Update O", "id"=>"30"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mUPDATE "os" SET "obs" = ?, "updated_at" = ? WHERE "os"."id" = 30[0m  [["obs", "Embaçada. Aguarda resposta do Thomas (desde 21/03/2014). Aberta em 17/03/2014"], ["updated_at", Fri, 21 Mar 2014 21:15:29 UTC +00:00]]
+  [1m[35m (104.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/os/30
+Completed 302 Found in 132ms (ActiveRecord: 106.0ms)
+
+
+Started GET "/os/30" for 127.0.0.1 at 2014-03-21 18:15:29 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+  Rendered os/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 18:15:29 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 18:15:30 -0300
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-21 18:15:31 -0300
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 56ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-21 18:27:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 1302ms (Views: 1235.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 18:27:56 -0300
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-03-21 18:28:03 -0300
+
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (301.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-21 18:31:07 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 272ms (Views: 232.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:09 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:24 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:25 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-21 18:31:25 -0300
+
+
+Started GET "/welcome/index.html.erb" for 127.0.0.1 at 2014-03-21 18:31:38 -0300
+
+ActionController::RoutingError (No route matches [GET] "/welcome/index.html.erb"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (163.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2014-03-21 18:31:41 -0300
+
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (114.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-03-21 18:31:44 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (114.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 10:30:25 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 781ms (Views: 735.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:27 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:28 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:28 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 10:30:28 -0300
+
+
+Started GET "/os/15" for 127.0.0.1 at 2014-03-24 10:30:44 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered os/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-24 10:30:52 -0300
+Processing by OsController#index as HTML
+  [1m[35mO Load (2.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 11:19:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (74.0ms)
+Completed 200 OK in 286ms (Views: 237.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-24 11:19:58 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-24 11:19:58 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-24 11:19:58 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:58 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 11:19:58 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:59 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:59 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:59 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:59 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 11:19:59 -0300
+
+
+Started GET "/os/30/edit" for 127.0.0.1 at 2014-03-24 11:20:06 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+Filter chain halted as #<Proc:0x3fc06c0@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/os/30/edit" for 127.0.0.1 at 2014-03-24 11:20:11 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[35mO Load (0.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "30"]]
+  Rendered os/_form.html.erb (203.0ms)
+  Rendered os/edit.html.erb within layouts/application (267.0ms)
+Completed 200 OK in 293ms (Views: 288.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/os/30" for 127.0.0.1 at 2014-03-24 11:20:39 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KjXr9bIo4qcXoFzyalwYuf/nxgi/tr62F994ZfOd+c=", "o"=>{"numero"=>"1075", "cliente"=>"Marcon", "itens"=>"1 câmera GV-CB120", "status"=>"Em conserto", "obs"=>"Embaçada. A ser enviada para a GeoVision (desde 24/03/2014). Aberta em 17/03/2014"}, "commit"=>"Update O", "id"=>"30"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "30"]]
+Filter chain halted as #<Proc:0x3fc06c0@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.0ms)
+
+
+Started PATCH "/os/30" for 127.0.0.1 at 2014-03-24 11:20:39 -0300
+Processing by OsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KjXr9bIo4qcXoFzyalwYuf/nxgi/tr62F994ZfOd+c=", "o"=>{"numero"=>"1075", "cliente"=>"Marcon", "itens"=>"1 câmera GV-CB120", "status"=>"Em conserto", "obs"=>"Embaçada. A ser enviada para a GeoVision (desde 24/03/2014). Aberta em 17/03/2014"}, "commit"=>"Update O", "id"=>"30"}
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "30"]]
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (128.0ms)[0m  UPDATE "os" SET "obs" = ?, "updated_at" = ? WHERE "os"."id" = 30  [["obs", "Embaçada. A ser enviada para a GeoVision (desde 24/03/2014). Aberta em 17/03/2014"], ["updated_at", Mon, 24 Mar 2014 14:20:39 UTC +00:00]]
+  [1m[36m (147.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/os/30
+Completed 302 Found in 349ms (ActiveRecord: 277.0ms)
+
+
+Started GET "/os/30" for 127.0.0.1 at 2014-03-24 11:20:39 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[35mO Load (0.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "30"]]
+  Rendered os/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 11:20:39 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 11:20:40 -0300
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-24 11:20:41 -0300
+Processing by OsController#index as HTML
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os"[0m
+  Rendered os/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/os/32" for 127.0.0.1 at 2014-03-24 11:21:15 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "32"]]
+  Rendered os/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-24 11:21:19 -0300
+Processing by OsController#index as HTML
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os"[0m
+  Rendered os/index.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/os/new" for 127.0.0.1 at 2014-03-24 11:22:11 -0300
+Processing by OsController#new as HTML
+  Rendered os/_form.html.erb (4.0ms)
+  Rendered os/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/os" for 127.0.0.1 at 2014-03-24 11:22:56 -0300
+Processing by OsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KjXr9bIo4qcXoFzyalwYuf/nxgi/tr62F994ZfOd+c=", "o"=>{"numero"=>"1073", "cliente"=>"PPSE (Porto Ponto)", "itens"=>"1 câmera F731", "status"=>"Em conserto", "obs"=>"Aberta dia 14/03/2014"}, "commit"=>"Create O"}
+Filter chain halted as #<Proc:0x3fc06c0@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/os" for 127.0.0.1 at 2014-03-24 11:22:56 -0300
+Processing by OsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KjXr9bIo4qcXoFzyalwYuf/nxgi/tr62F994ZfOd+c=", "o"=>{"numero"=>"1073", "cliente"=>"PPSE (Porto Ponto)", "itens"=>"1 câmera F731", "status"=>"Em conserto", "obs"=>"Aberta dia 14/03/2014"}, "commit"=>"Create O"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "os" ("cliente", "created_at", "itens", "numero", "obs", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["cliente", "PPSE (Porto Ponto)"], ["created_at", Mon, 24 Mar 2014 14:22:56 UTC +00:00], ["itens", "1 câmera F731"], ["numero", "1073"], ["obs", "Aberta dia 14/03/2014"], ["status", "Em conserto"], ["updated_at", Mon, 24 Mar 2014 14:22:56 UTC +00:00]]
+  [1m[35m (61.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/os/40
+Completed 302 Found in 73ms (ActiveRecord: 64.0ms)
+
+
+Started GET "/os/40" for 127.0.0.1 at 2014-03-24 11:22:56 -0300
+Processing by OsController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "40"]]
+  Rendered os/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 11:22:56 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-24 11:22:56 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 11:22:57 -0300
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-24 11:22:59 -0300
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-03-24 14:48:23 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OsController#index as HTML
+  [1m[35mO Load (1.0ms)[0m  SELECT "os".* FROM "os"
+  Rendered os/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 1149ms (Views: 1084.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-24 14:48:25 -0300
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-03-24 14:48:25 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/os.css?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/os.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-24 14:48:26 -0300
+
+
+Started GET "/os/12/edit" for 127.0.0.1 at 2014-03-24 14:48:57 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mO Load (0.0ms)[0m  [1mSELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1[0m  [["id", "12"]]
+Filter chain halted as #<Proc:0x41023c8@C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.2/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/os/12/edit" for 127.0.0.1 at 2014-03-24 14:49:02 -0300
+Processing by OsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mO Load (0.0ms)[0m  SELECT "os".* FROM "os" WHERE "os"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered os/_form.html.erb (202.0ms)
+  Rendered os/edit.html.erb within layouts/application (253.0ms)
+Completed 200 OK in 281ms (Views: 277.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/os" for 127.0.0.1 at 2014-03-24 14:49:05 -0300
+Processing by OsController#index as HTML
+  [1m[36mO Load (1.0ms)[0m  [1mSELECT "os".* FROM "os"[0m
+  Rendered os/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 1.0ms)
