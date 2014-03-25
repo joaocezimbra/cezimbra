@@ -6,7 +6,8 @@ class CreateOs < ActiveRecord::Migration
       t.string :itens
       t.string :status
       t.string :obs
-
+      t.string :data
+      
       t.timestamps
     end
   end
